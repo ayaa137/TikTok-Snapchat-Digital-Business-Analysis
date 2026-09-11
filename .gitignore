@@ -1,0 +1,5 @@
+.ipython/
+executed_check.ipynb
+.ipynb_checkpoints/
+__pycache__/
+pdf_preview_pages/

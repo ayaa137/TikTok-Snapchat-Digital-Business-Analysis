@@ -1,0 +1,3 @@
+relationship,pearson_r,p_value,significance
+video_duration_sec vs engagement_rate,0.010159514553681196,0.16048897595110087,Not significant
+download_rate vs engagement_rate,0.666479728278789,0.0,*** p < .001

@@ -1,0 +1,2 @@
+comparison,verified_n,not_verified_n,verified_mean_engagement_rate,not_verified_mean_engagement_rate,mean_difference,t_statistic,p_value,significance
+verified vs not verified,1200,17884,0.2890713911181682,0.334780754254474,-0.0457093631363058,-8.654835617852918,1.2897720643767631e-17,*** p < .001
