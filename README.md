@@ -6,12 +6,18 @@ This project compares TikTok and Snapchat as digital business platforms using en
 
 ## Project Files
 
-- `TikTok_Snapchat_Business_Analysis_CLEAN.ipynb` is the main portfolio notebook.
-- `TikTok_Snapchat_Business_Analysis.html` is an exported HTML version of the notebook.
-- `tiktok_dataset.csv` is the original TikTok video-level dataset.
-- `social_media_usage.csv` is the original social media usage dataset.
-- `analysis_outputs/` contains regenerated cleaned data, tables, figures, and the written report.
-- `build_business_analysis_notebook.py` rebuilds and executes the notebook.
+- `TikTok_Snapchat_Business_Analysis.ipynb` — main portfolio notebook
+- `TikTok_Snapchat_Business_Analysis.html` — exported HTML version of the notebook
+- `tiktok_dataset.csv` — original TikTok video-level dataset
+- `social_media_usage.csv` — original social media usage dataset
+- `analysis_outputs/` — cleaned data, tables, figures, and written report
+- `build_business_analysis_notebook.py` — rebuilds and executes the notebook
+- `validate_notebook.py` — checks that the notebook runs successfully
+- `requirements.txt` — required Python packages
+
+## Research Question
+
+**How do TikTok and Snapchat differ in their data-driven business models, advertising-based revenue mechanisms, and innovation strategies, and how do these differences influence their competitive advantage in the digital platform economy?**
 
 ## Key Analytical Choice
 
@@ -19,16 +25,51 @@ The notebook treats `engagement_rate` as a constructed descriptive metric:
 
 `engagement_rate = (likes + shares + comments) / views`
 
-Because likes, shares, comments, and views define this metric, they are not used as independent predictors of engagement rate. The corrected analysis uses non-circular comparisons based on fields such as content status, verification status, author ban status, video duration, and download rate.
+Because likes, shares, comments, and views directly define this metric, they are not used as independent predictors of engagement rate.
+
+The corrected analysis instead uses non-circular comparisons based on variables such as:
+
+- Content status
+- Verification status
+- Author ban status
+- Video duration
+- Download rate
 
 ## Main Findings
 
-- The cleaned TikTok dataset contains 19,084 videos.
-- TikTok's average engagement rate is 33.19%, with a median of 31.57%.
-- The TikTok vs Snapchat comparison dataset contains 297 observations.
-- Snapchat has slightly higher average usage values in this sample, but none of the four Welch t-tests are statistically significant at alpha = 0.05.
-- TikTok is interpreted mainly through algorithmic content discovery.
-- Snapchat is interpreted mainly through communication and augmented reality.
+- The cleaned TikTok dataset contains **19,084 videos**.
+- TikTok's average engagement rate is approximately **33.19%**, with a median of approximately **31.57%**.
+- The TikTok vs Snapchat comparison contains **297 observations**.
+- Snapchat shows slightly higher average usage values in the available comparison sample.
+- However, none of the four Welch independent-sample t-tests are statistically significant at **α = 0.05**.
+- TikTok is interpreted mainly through **algorithmic content discovery and personalization**.
+- Snapchat is interpreted mainly through **communication, friend networks, and augmented reality**.
+
+## Business Interpretation
+
+TikTok and Snapchat compete within the same digital attention economy but create value differently.
+
+### TikTok
+
+TikTok's strategy is primarily associated with:
+
+- Algorithmic content discovery
+- Personalized recommendations
+- Creator activity
+- User-generated content
+- Advertising inventory
+- Data-driven engagement
+
+### Snapchat
+
+Snapchat's strategy is primarily associated with:
+
+- Communication
+- Friend networks
+- Private social interaction
+- Visual communication
+- Augmented reality
+- Advertising
 
 ## How to Run
 
@@ -50,12 +91,54 @@ Validate that every notebook cell executes without hidden variables:
 python validate_notebook.py
 ```
 
-Export the notebook to HTML with:
+Export the notebook to HTML:
 
 ```bash
 jupyter nbconvert --to html TikTok_Snapchat_Business_Analysis.ipynb
 ```
 
+## Project Structure
+
+```text
+TikTok-Snapchat-Digital-Business-Analysis/
+│
+├── README.md
+├── requirements.txt
+├── TikTok_Snapchat_Business_Analysis.ipynb
+├── TikTok_Snapchat_Business_Analysis.html
+├── build_business_analysis_notebook.py
+├── validate_notebook.py
+├── tiktok_dataset.csv
+├── social_media_usage.csv
+│
+└── analysis_outputs/
+    ├── cleaned_data/
+    ├── figures/
+    ├── tables/
+    └── business_analysis_report.md
+```
+
 ## Limitations
 
-The TikTok dataset provides deeper content-level analysis than the Snapchat comparison data. The project does not include demographics, ad revenue, campaign outcomes, watch time, recommendation source, creator category, or follower count, so the findings should be read as descriptive business analysis rather than causal evidence.
+The TikTok dataset provides much deeper content-level information than the Snapchat comparison data.
+
+The project does not include variables such as:
+
+- Demographics
+- Advertising revenue
+- Campaign outcomes
+- Watch time
+- Recommendation source
+- Creator category
+- Follower count
+
+Therefore, the findings should be interpreted as **descriptive business analysis supported by statistical evidence**, rather than causal or predictive evidence.
+
+## Authors
+
+**Aya Abdine**  
+**Meriam El Askri**  
+**Ghofran Mahmoud**
+
+Digital Business Models and Functions  
+Constructor University
