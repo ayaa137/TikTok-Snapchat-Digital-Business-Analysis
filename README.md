@@ -216,6 +216,12 @@ Export the notebook to HTML:
 jupyter nbconvert --to html TikTok_Snapchat_Business_Analysis.ipynb
 ```
 
+## 🌐 Project Website
+
+A live project website provides a visual overview of the analysis, key statistical results, platform comparison, and business findings.
+
+**Live website:** [View the live project website](https://ayaa137.github.io/TikTok-Snapchat-Digital-Business-Analysis/)
+
 ## ⚠️ Limitations
 
 The TikTok dataset provides substantially richer content-level information than the Snapchat comparison data.
